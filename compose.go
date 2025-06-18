@@ -100,8 +100,8 @@ func toFilter0(a *arena, r *Rule, lt layerTypes) (*fwpmFilter0, error) {
 		return nil, err
 	}
 
-	ret := (*fwpmFilter0)(a.Alloc(unsafe.Sizeof(fwpmFilter0{})))
-	*ret = fwpmFilter0{
+	//ret := (*fwpmFilter0)(a.Alloc(unsafe.Sizeof(fwpmFilter0{})))
+	ret := &fwpmFilter0{
 		FilterKey: r.ID,
 		DisplayData: fwpmDisplayData0{
 			Name:        toUint16(a, r.Name),

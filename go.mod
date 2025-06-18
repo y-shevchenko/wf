@@ -1,4 +1,4 @@
-module github.com/tailscale/wf
+module github.com/y-shevchenko/wf
 
 go 1.18
 
